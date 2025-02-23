@@ -1,6 +1,7 @@
-public class Main{
+public class Main {
     public static void main(String[] args) {
         
+        // 创建第一个 MusicBox 对象
         MusicBox mbox = new MusicBox("S34TG65", 'Y', "Raindrops", "Misty", 
         "The path less traveled", "Country", "BZEE Music", "Rhythm Divine");
 
@@ -9,14 +10,13 @@ public class Main{
         
         // --- TODO
 
-        /* Repeat the above code to create another object  
-         * Pass different parameters to the MusicBox constructor, but initialise premiumSong to N and when calling the
-         * playSong method, pass ads parameter as just 1
-         * 
-         * 
-        */
-        
+        // 创建第二个 MusicBox 对象
+        MusicBox mbox2 = new MusicBox("A12BC34", 'N', "Sunshine", "John Doe", 
+        "Bright Skies", "Pop", "Sunny Records", "Golden Hits");
 
+        System.out.println("Now playing the second song");
+        mbox2.playSong(mbox2.getSongID(), mbox2.getPremiumSong(), 1);
+        
     }
 }
 
