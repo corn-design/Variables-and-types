@@ -1,8 +1,16 @@
-public class App {
-        public static void main(String[] args) throws Exception {
-        LuckinCoffee luckcoffee = new LuckinCoffee();
-        luckcoffee.takeOrder(" 123"," 2 lettes",20.00);
-
-    }
+public class Main {
+    public static void main(String[] args) {
     
+        SliceOHeaven order1 = new SliceOHeaven();
+        order1.generateReceipt();
+
+        System.out.println();
+
+    
+        SliceOHeaven order2 = new SliceOHeaven("SOH-123", "Pepperoni, Mushrooms", 20.00);
+        order2.setSides("Garlic Bread");
+        order2.setDrinks("Coke");
+        order2.generateReceipt();
+    }
 }
+
